@@ -47,6 +47,7 @@ export default function Page() {
       try {
         const response = await axios.get(
           `${urLink}/wp-json/wc/v3/data/currencies/current`,
+          // @ts-ignore
           { auth }
         );
 
